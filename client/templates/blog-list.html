@@ -1,0 +1,34 @@
+<div class=''>
+  <h1>{{ title }}<span>: {{ clicks }}</span></h1>
+  <button ng-click='someTitle()' >Click me!</button>
+  <h2>Blog List: {{ blogId }}</h2>
+  <div class='row' ng-repeat='items in colItems'>
+    <div class='{{ cssClass }}' ng-repeat='item in items'>
+      <div class="thumbnail">
+        <img ng-src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png' alt="...">
+        <div class="caption">
+          <h3>{{ item.title }}{{ cssClass }}</h3>
+          <p>{{ item.description }}</p>
+          <a href='/blog/{{ item.id }}' class="btn btn-primary" role="button" confirm-click='are you ready?' confirmed-click='goToItem(item)'>view</a>
+          <a href="#" class="btn btn-default" role="button">Button</a>
+        </div>
+      </div>
+  </div>
+    <!-- <div class="row" ng-if='items.length > 0'>
+      <div class="col-sm-6 col-md-4" ng-repeat='item in items'>
+        <div class="thumbnail">
+          <img src="..." alt="...">
+          <div class="caption">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+            <a href='/blog/{{ item.id }}' class="btn btn-primary" role="button" confirm-click='are you ready?' confirmed-click='goToItem(item)'>view</a>
+            <a href="#" class="btn btn-default" role="button">Button</a>
+          </div>
+        </div>
+      </div> -->
+
+        <!-- <a href='#' ng-click='goToItem(item)' >{{ item.title }}</a> -->
+        <!-- <confirm-click message='are you positive' eq='10+10' post='item'></confirm-click> -->
+    </div>
+  <span ng-if='items.length === 0'>No current post</span>
+</div>

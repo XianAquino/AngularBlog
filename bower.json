@@ -1,0 +1,22 @@
+{
+  "name": "learnangular",
+  "description": "learning angular 1.5",
+  "main": "index.js",
+  "authors": [
+    "XianAquino <xian_a@yahoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.4",
+    "angular-route": "1.6.4",
+    "angular-resource": "1.6.4"
+  }
+}
